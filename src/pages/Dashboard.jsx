@@ -14,7 +14,7 @@ const Dashboard = () => {
       grupo, alumnos, fecha, 
       nivel: "Secundaria"
     }
-      const data = await axios.post("http://localhost:4000/api/crear",datos,{
+      const data = await axios.post("backend-asistencia-production.up.railway.app/api/crear",datos,{
         withCredentials:true
       })
       .then(()=>{

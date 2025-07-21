@@ -15,7 +15,7 @@ const Navigation = ({titulo, boton}) => {
     else navigate('/dashboard')
   }
   async function cerrarSesion () {
-    const res = await axios.post("http://localhost:4000/api/logout",{},{withCredentials: true})
+    const res = await axios.post("backend-asistencia-production.up.railway.app/api/logout",{},{withCredentials: true})
     .then(()=>{
       console.log("Sesión cerrada")
       navigate("/", { replace:true })
