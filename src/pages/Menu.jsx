@@ -20,7 +20,7 @@ const Menu = () =>{
 
   async function handleLogin(){
     try{
-      const response = await axios.post("backend-asistencia-production.up.railway.app/api/login",
+      const response = await axios.post("https://backend-asistencia-production.up.railway.app/api/login",
         {email,password},
         {withCredentials:true}
       )

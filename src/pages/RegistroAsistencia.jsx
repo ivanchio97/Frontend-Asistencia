@@ -9,7 +9,7 @@ const RegistroAsistencia = () =>{
   const [grupo, setGrupo] = useState("")
 
   useEffect(()=>{
-    axios.get("backend-asistencia-production.up.railway.app/api",{ withCredentials: true }).then(res=>{
+    axios.get("https://backend-asistencia-production.up.railway.app/api",{ withCredentials: true }).then(res=>{
       setData(res.data)
       setFilteredData(res.data)
       console.log(res.data)

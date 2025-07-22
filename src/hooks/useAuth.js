@@ -6,7 +6,7 @@ export function useAuth(){
  const [loading, setLoading] = useState(true)
 
  useEffect(()=>{
-  axios.get("backend-asistencia-production.up.railway.app/api/protectedroute",{withCredentials:true})
+  axios.get("https://backend-asistencia-production.up.railway.app/api/protectedroute",{withCredentials:true})
   .then(res=>{
     setUser(res.data.usuario)
     
