@@ -14,8 +14,8 @@ const Navigation = ({titulo, boton}) => {
     if(boton == 0) navigate('/registro-asistencia')
     else navigate('/dashboard')
   }
-  async function cerrarSesion () {
-    const res = await axios.post("https://backend-asistencia-production.up.railway.app/api/logout",{},{withCredentials: true})
+  function cerrarSesion () {
+    axios.post("https://backend-asistencia-production.up.railway.app/api/logout",{},{withCredentials: true})
     .then(()=>{
       console.log("Sesión cerrada")
       navigate("/", { replace:true })
