@@ -9,6 +9,9 @@ const Dashboard = () => {
   const [message, setMessage] = useState("")
 
  async function enviarDatos(){
+
+  if(!alumnos) return;
+
     setMessage("Registrando...")
     const datos = {
       grupo, alumnos, fecha, 
